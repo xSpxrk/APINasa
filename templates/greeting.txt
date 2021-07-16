@@ -1,0 +1,2 @@
+Hello {{ name }} I'm {{ bot_name }}.
+Check my moves!!!
