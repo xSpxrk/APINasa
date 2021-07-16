@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, BigInteger, Boolean, create_engine
 from sqlalchemy.ext.declarative import declarative_base
 
-engine = create_engine('sqlite:///db.db')
+engine = create_engine('sqlite:///DataBase\\db.db')
 
 Base = declarative_base()
 
