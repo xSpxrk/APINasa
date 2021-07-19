@@ -1,5 +1,5 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from helpers.donki import *
+from helpers.get_donki import *
 
 donki = InlineKeyboardMarkup(row_width=1)
 
@@ -15,6 +15,8 @@ rbe = InlineKeyboardButton(text='Radiation Belt Enhancement ', url=get_rbe())
 
 hss = InlineKeyboardButton(text='Hight Speed Stream', url=get_hss())
 
+cancel = InlineKeyboardButton(text='Cancel', callback_data='cancel')
+
 
 donki.insert(cme)
 donki.insert(ips)
@@ -22,3 +24,4 @@ donki.insert(flr)
 donki.insert(sep)
 donki.insert(rbe)
 donki.insert(hss)
+donki.insert(cancel)
